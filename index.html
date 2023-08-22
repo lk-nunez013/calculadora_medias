@@ -12,9 +12,9 @@
             <img src="./images/logo.png" alt="capel e diploma">
             <h1>Calculadora de médias</h1>
         </header>
-        <form action="submit">
-            <input type="text" name="" id="" placeholder="Nome da atividade" required>
-            <input type="number" required min="0" max="10" placeholder="Nota da atividade">
+        <form id="form-calculadora" action="submit">
+            <input type="text" name="" id="nome-atividade" placeholder="Nome da atividade" required>
+            <input type="number" id="nota-atividade" required min="0" max="10" placeholder="Nota">
             <button type="submit">Adicionar +</button>
         </form>
             <table cellspacing="0">
@@ -26,21 +26,18 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Atividade 1</td>
-                        <td>7</td>
-                        <td><img src="./images/aprovado.png" alt="Emoji festejando"></td>
-                    </tr>
+                    <tr></tr>
                 </tbody>
                 <tfoot>
                     <tr>
                         <td>Média final</td>
-                        <td>7</td>
-                        <td><span class="resultado reprovado">Aprovado</span></td>
+                        <td id="media-final-valor">---</td>
+                        <td id="media-final-resultado">---</td>
                     </tr>
                 </tfoot>
             </table>
         
     </div>
+    <script src="./main.js"></script>
 </body>
 </html>
